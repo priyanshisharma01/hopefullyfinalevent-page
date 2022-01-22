@@ -1,0 +1,388 @@
+section{
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    background: #000200;
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    background-color: black;
+}
+/* body{
+    background-color: black;
+} */
+div .starr
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: animate 8s ease-in-out infinite;
+             
+
+}
+section .star.star1
+{
+    animation-delay: 0s;
+    background: url(star1.png);
+}
+
+section .star
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    pointer-events: none;
+    background-attachment: fixed;
+
+    animation: animate 8s ease-in-out infinite;
+             
+
+}
+section .star.star1
+{       position: fixed;
+
+    animation-delay: 0s;
+    background: url(star1.png);
+    
+}
+section .star.star2
+{
+    animation-delay: -1s;
+    background: url(star2.png);
+    position: fixed;
+
+}
+section .star.star3
+{
+    animation-delay: -2s;
+    background: url(star3.png);
+    position: fixed;
+
+}
+section .star.star4
+{
+    animation-delay: -3s;
+    background: url(star4.png);
+    position: fixed;
+
+}
+section .star.star5
+{
+    animation-delay: -4s;
+    background: url(star5.png);
+    position: fixed;
+
+}
+section .star.star6
+{
+    animation-delay: -5s;
+    background: url(star6.png);
+    position: fixed;
+
+}
+section .star.star7
+{
+    animation-delay: -6s;
+    background: url(star7.png);
+    position: fixed;
+
+}
+section .star.star8
+{
+    animation-delay: -7s;
+    background: url(star8.png);
+    position: fixed;
+
+}
+
+@keyframes animate
+{
+    0%,20%,40%,60%,80%,100%
+    {
+        opacity: 0;
+    }
+    10%,30%,50%,70%,90%
+    {
+        opacity: 1;
+    }
+}
+@keyframes backgroundmove{
+    0%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(2);
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html, body, #container {
+  height: 100%;
+}
+body{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  position: relative;
+}
+/* body::before{
+  content: '';
+  position: relative;
+  width: 100%;
+  background: #FF676D;
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+} */
+::selection{
+  background:	#FF676D;
+  color: #fff;
+}
+.container1{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+  margin-top: 100rem;
+}
+.container1 .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+/*for the second scroll*/
+#four:checked ~ .main-card{
+  margin-left: -100%;
+}
+
+#six:checked ~ .main-card{
+    margin-left: -100%;
+  }
+
+.container1 .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #FF676D;
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+  font-size: 20px;
+  color: #FF676D;
+}
+.card .content .media-icons{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #FF676D;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: #FF676D;
+  background-color: #fff;
+  border-color: #FF676D;
+}
+ .container1 .button1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button1 label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button1 label.active{
+  width: 35px;
+}
+#one:checked ~ .button1 .one{
+  width: 35px;
+}
+#one:checked ~ .button1 .two{
+  width: 15px;
+}
+#two:checked ~ .button1 .one{
+  width: 15px;
+}
+#two:checked ~ .button1 .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+
+
+
+
+/*for the second scroll*/
+
+.container1 .button2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button2 label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button2 label.active{
+  width: 35px;
+}
+#three:checked ~ .button2 .three{
+  width: 35px;
+}
+#three:checked ~ .button2 .four{
+  width: 15px;
+}
+#four:checked ~ .button2 .three{
+  width: 15px;
+}
+#four:checked ~ .button2 .four{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+
+
+
+/*for the second scroll*/
+
+.container1 .button3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .button3 label{
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #fff;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .button3 label.active{
+    width: 35px;
+  }
+  #five:checked ~ .button3 .five{
+    width: 35px;
+  }
+  #five:checked ~ .button3 .six{
+    width: 15px;
+  }
+  #six:checked ~ .button3 .five{
+    width: 15px;
+  }
+  #six:checked ~ .button3 .six{
+    width: 35px;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+
+
+
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
+
+
+
+
